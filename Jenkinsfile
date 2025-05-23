@@ -9,21 +9,18 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'echo Build done'
+                bat 'echo Building the project...'
             }
         }
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'echo Tests passed'
+                bat 'echo Running tests...'
             }
         }
         stage('Notify') {
             steps {
-                echo 'Build and Test complete!'
+                bat 'echo Build and Test complete!'
             }
         }
     }
 }
-Add Jenkinsfile for pipeline demo
